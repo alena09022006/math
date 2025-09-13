@@ -1,0 +1,12 @@
+ import math
+
+   n = int(input("Введите неотрицательное целое число: "))
+
+
+   if n < 0:
+       print("Факториал не определён для отрицательных чисел.")
+   else:
+     
+       factorial = math.factorial(n)
+       print(f"Факториал числа {n} равен {factorial}.")
+   
