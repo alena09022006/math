@@ -1,0 +1,24 @@
+def my_factorial(n):
+   
+    
+    Args:
+        n (int): Целое неотрицательное число
+        
+    Returns:
+        int: Факториал числа n
+        
+    Raises:
+        ValueError: Если n отрицательное или не целое число
+   
+    if n < 0:
+        raise ValueError("Факториал определен только для неотрицательных целых чисел")
+    
+
+    if not isinstance(n, int):
+        raise ValueError("Факториал определен только для целых чисел")
+    
+   
+    if n == 0:
+        return 1
+
+    return n * my_factorial(n - 1)
